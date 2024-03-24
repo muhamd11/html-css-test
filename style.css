@@ -1,0 +1,237 @@
+/* Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container Styles */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 997px) {
+  /* Hide right-side section on small screens */
+  .container .right-side {
+    display: none;
+  }
+}
+
+/* Login Section */
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+/* Info Text Styles */
+.info h2 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.info p {
+  color: #525252;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Login Form Styles */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  color: black;
+  z-index: 1;
+  padding-top: 4px;
+}
+
+input {
+  background-color: #F0EDFF;
+  border: none;
+  outline: none;
+  opacity: 0.8;
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+  padding-left: 50px;
+}
+
+input::placeholder {
+  color: #1c1c1c;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Login Button Styles */
+.login-btn {
+  border: none;
+  outline: none;
+  width: 124px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(99.78deg, #9181F4 -5.85%, #5038ED 109.55%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+/* Login With Others Section Styles */
+.login-with-others {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-with-others p {
+  position: relative;
+  display: inline-block;
+  color: #525252;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login-with-others p::before,
+.login-with-others p::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 64px;
+  background-color: #F0EDFF;
+}
+
+.login-with-others p::before {
+  top: 50%;
+  left: -70px;
+}
+
+.login-with-others p::after {
+  top: 50%;
+  right: -70px;
+}
+
+.login-with-others p span {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Login With Others Button Styles */
+.login-with-others button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #F0EDFF;
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.login-with-others button .text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1f1f1f;
+}
+
+.login-with-others button .text span {
+  font-weight: bold;
+}
+
+/* Right Side Section Styles */
+.right-side {
+  width: 50%;
+  background: linear-gradient(217.64deg, #9181F4 -5.84%, #5038ED 106.73%);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.right-side .background-img {
+  opacity: 0.06;
+}
+
+.right-side .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 412px;
+  height: 524px;
+  border-radius: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.52);
+  background-color: rgba(135, 119, 242, 0.7);
+}
+
+.right-side .box p {
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 700;
+  text-wrap: wrap;
+  width: 50%;
+  padding-left: 30px;
+}
+
+.right-side .box .women-img {
+  position: absolute;
+  top: -1px;
+  right: -118px;
+  width: 785px;
+}
+
+.right-side .box .circle {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #FFFFFF;
+  top: 350px;
+  left: calc(-79px / 2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-side .box .circle .thunderbolt {
+  max-width: 100%;
+  width: 42px;
+}
